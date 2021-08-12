@@ -38,19 +38,20 @@ namespace TAREA_SEMANA_02
                 {
                     
 
-                    Console.WriteLine("INGRESAR NOTA {0}: ",j);
+                    Console.Write("INGRESAR NOTA {0}: ",j);
                     notas[0] = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine(" ");
                     
 
                 }
 
-                double nota1 = notas[0] * 30 / 100;
-                double nota2 = notas[1] * 35 / 100;
-                double nota3 = notas[2] * 25 / 100;
-                double notaf = nota1 + nota2 + nota3; 
+                notas[0] = (notas[0] * 30) / 100;
+                notas[1] = (notas[1] * 35) / 100;
+                notas[2] = (notas[2] * 25) / 100;
 
-                Console.WriteLine("LA NOTA FINAL DEL ESTUDIANTE, {0}{1}",arreglo[0]," ES: ",notaf); 
+                double notaf = notas[0] + notas[1] + notas[2];
+
+                Console.WriteLine("LA NOTA FINAL DEL ESTUDIANTE, {0}{1}{2}",arreglo[0]," ES: ",notas[0]); 
             }
       
             Console.ReadKey(); 
